@@ -1,0 +1,1 @@
+{\n    "name": "LLM Environment",\n    "dockerFile": "Dockerfile",\n    "context": ".",\n    "postCreateCommand": [\n        "pip install ollama",\n        "pip install deepseek"\n    ],\n    "settings": {\n        "python.pythonPath": "/usr/local/bin/python"\n    },\n    "extensions": [\n        "ms-python.python"\n    ]\n}

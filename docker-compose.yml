@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  ollama:
+    image: ollama/deepseek-r1:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - MODEL=DeepSeek-R1-distill-qwen
+    volumes:
+      - ./data:/app/data
+    restart: always
